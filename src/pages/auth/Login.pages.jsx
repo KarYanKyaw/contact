@@ -65,7 +65,7 @@ const LoginPage = () => {
           <LoadingComponent />
         ) : (
           <>
-            <div className="basis-2/4">
+            <div className=" basis-3/3 md:basis-2/4">
               <Wrapper>
                 <Card className="border-0">
                   <CardHeaderComponent

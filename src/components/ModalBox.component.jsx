@@ -12,11 +12,20 @@ import {
 } from "@/components/ui/alert-dialog";
 import { Button } from "./ui/button";
 
-const ModalBox = ({ trigger, variant, title, description, confirm, fun }) => {
+const ModalBox = ({
+  trigger,
+  size,
+  variant,
+  title,
+  description,
+  confirm,
+  fun,
+}) => {
   return (
     <AlertDialog>
       <AlertDialogTrigger asChild>
         <Button
+          size={size}
           variant={variant}
           onClick={(event) => {
             event.stopPropagation();

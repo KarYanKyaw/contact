@@ -10,12 +10,12 @@ const Navbar = () => {
     nav("/");
   };
   return (
-    <div className=" fixed top-0 w-full bg-primary-foreground py-3">
+    <div className=" fixed top-0 w-screen bg-primary-foreground py-3">
       <Wrapper>
         <div className="flex justify-between items-center">
           <Link
             to={"/home"}
-            className="font-medium text-2xl text-primary font-serif"
+            className="font-medium text-lg md:text-2xl text-primary font-serif"
           >
             Contact App
           </Link>
@@ -24,6 +24,7 @@ const Navbar = () => {
               Home
             </NavLink>
             <ModalBox
+              size="sm"
               variant="destructive"
               trigger={"Log Out"}
               title={"Are you sure you want to log out?"}

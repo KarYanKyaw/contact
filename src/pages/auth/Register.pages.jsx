@@ -78,24 +78,24 @@ const RegisterPage = () => {
 
   return (
     <PreventRoutes path={"/home"} isAuth={localStorage.getItem("auth")}>
-      <div className="h-screen bg-background flex justify-center items-center">
+      <div className="min-h-screen bg-background flex justify-center items-center">
         {isLoading ? (
           <LoadingComponent />
         ) : (
-          <div className="basis-2/4">
+          <div className=" basis-full md:basis-2/4">
             <Wrapper>
-              {isError && (
-                <RegisterError
-                  error={"Register Fail"}
-                  message={error.data.message}
-                />
-              )}
               <Card className="border-0">
                 <CardHeaderComponent
                   title={"Welcome From  Contact App!"}
                   description={"Register account here!"}
                 />
                 <CardContent>
+                  {isError && (
+                    <RegisterError
+                      error={"Register Fail"}
+                      message={error.data.message}
+                    />
+                  )}
                   <Formik
                     onSubmit={handleSubmit}
                     validationSchema={validationSchema}
