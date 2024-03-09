@@ -9,5 +9,4 @@ export { default as ContactTable } from "./ContactTable.component";
 export { default as ModalBox } from "./ModalBox.component";
 export { default as Navbar } from "./Navbar.component";
 export { default as EditBox } from "./EditBox.component";
-export { default as ThemeToggle } from "./ThemeToggle.component";
 export { default as RegisterError } from "./RegisterError.component";
